@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = function () {
 
-  // MENU
+  // MENU TOGGLE
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
 
@@ -14,17 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const videos = document.querySelectorAll("#video-container video");
   let current = 0;
 
-  if (videos.length > 0) {
+  // safety check
+  if (videos.length === 0) return;
 
-    // ensure first video visible
-    videos[0].classList.add("active");
+  // ensure only first video active
+  videos.forEach((video, i) => {
+    video.classList.remove("active");
+    if (i === 0) video.classList.add("active");
+  });
 
-    setInterval(() => {
-      videos[current].classList.remove("active");
-      current = (current + 1) % videos.length;
-      videos[current].classList.add("active");
-    }, 6000);
+  setInterval(() => {
+    videos[current].classList.remove("active");
+    current = (current + 1) % videos.length;
+    videos[current].classList.add("active");
+  }, 4000);
 
-  }
-
-});
+};
