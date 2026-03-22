@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<div id="video-container">
+  <video class="active" autoplay muted loop>
+    <source src="islands2.mp4" type="video/mp4">
+  </video>
+  <video autoplay muted loop>
+    <source src="island.mp4" type="video/mp4">
+  </video>
+  <video autoplay muted loop>
+    <source src="man4.mp4" type="video/mp4">
+  </video>
+  
+</div>
+
+<div class="overlay"></div>
+
+<!-- NAVBAR -->
+<header>
+  <a href="#home" class="brand">TRAVEL</a>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="navigation" id="nav-links">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#places">PLACES</a>
+    <a href="#contactus">BOOKING</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="content">
+  <h1><span>WONDERFUL.</span><br>ISLAND</h1>
+  <p>
+    Explore breathtaking destinations and unforgettable adventures.
+    Discover beaches, mountains, and hidden gems around the world.
+  </p>
+  <a href="#about" class="btn">Read More</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about-container">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          <b>
+         " We bring you the most breathtaking destinations and adventures.
+          Our mission is to inspire you to explore the world. "
+          </b>
+        </p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLACES -->
+<section id="places" class="places">
+  <h2>Our Places</h2>
+  <div class="places-container">
+
+    <div class="place-card">
+      <img src="thailand1.jpg" alt="">
+      <h3>Thailand</h3>
+      <p>Beautiful beaches and sunset views.</p>
+    </div>
+
+    <div class="place-card">
+      <img src="boat.jpg" alt="">
+      <h3>Maldives</h3>
+      <p>Crystal clear waters and luxury stays.</p>
+    </div>
+
+    <div class="place-card">
+      <img src="iceland.jpg" alt="">
+      <h3>Iceland</h3>
+      <p>Mountains, glaciers and adventure.</p>
+    </div>
+
+    <div class="place-card">
+      <img src="kerala.jpg" alt="">
+      <h3>Kerala</h3>
+      <p>Mountains and plantation in Munnar.</p>
+    </div>
+
+    <div class="place-card">
+      <img src="ap.jpg" alt="">
+      <h3>Arunachal Pradesh</h3>
+      <p>Mountains and perfect Nature.</p>
+    </div>
+
+    <div class="place-card">
+      <img src="megha.jpg" alt="">
+      <h3>Meghalaya</h3>
+      <p>Mountains in Rainy Season.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- BOOKING SECTION -->
+
+<!-- BOOKING SECTION -->
+<section id="contactus" class="booking">
+
+  <!-- Booking Background Video -->
+  <video class="booking-video" autoplay muted loop>
+    <source src="man.mp4" type="video/mp4">
+  </video>
+
+  <div class="booking-overlay"></div>
+
+  <div class="booking-container">
+    <h2>Book Your Trip</h2>
+
+    <form>
+      <div class="input-group">
+        <label>Number of Tourists</label>
+        <input type="number" min="1" required>
+      </div>
+
+      <div class="input-group">
+        <label>Select Place</label>
+        <select required>
+          <option value="">-- Choose Destination --</option>
+          <option>Thailand</option>
+          <option>Maldives</option>
+          <option>Iceland</option>
+          <option>Kerala</option>
+          <option>Arunachal Pradesh</option>
+          <option>Meghalaya</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Travel Date</label>
+        <input type="date" required>
+      </div>
+
+      <div class="input-group">
+        <label>Contact Number</label>
+        <input type="tel" required>
+      </div>
+
+      <div class="input-group">
+        <label>Gmail Address</label>
+        <input type="email" required>
+      </div>
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
