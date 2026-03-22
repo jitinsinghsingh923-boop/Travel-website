@@ -34,6 +34,14 @@ body {
 #video-container video.active {
   opacity: 1;
 }
+#video-container video {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#video-container video.active {
+  opacity: 1;
+}
 
 .overlay {
   position: fixed;
